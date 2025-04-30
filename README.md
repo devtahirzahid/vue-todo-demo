@@ -1,31 +1,74 @@
-# .
+# Vue Todo App
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern todo application built with Vue 3, featuring drag-and-drop functionality, local storage persistence, and a clean UI.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Add, complete, and delete todos
+- Drag and drop to reorder items
+- Move items between active and completed lists
+- Persistent storage using localStorage
+- Responsive design
+- Toast notifications
 
-## Customize configuration
+## Prerequisites
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Node.js (v14 or higher)
+- Yarn package manager
 
-## Project Setup
+## Setup Instructions
 
-```sh
-npm install
+1. Clone the repository:
+
+```bash
+git clone https://github.com/devtahirzahid/vue-todo-demo.git
+cd vue-todo-demo
 ```
 
-### Compile and Hot-Reload for Development
+2. Install dependencies using Yarn:
 
-```sh
-npm run dev
+```bash
+yarn install
 ```
 
-### Compile and Minify for Production
+3. Start the development server:
 
-```sh
-npm run build
+```bash
+yarn dev
 ```
-# vue-todo-demo
-# vue-todo-demo
+
+4. Build for production:
+
+```bash
+yarn build
+```
+
+## Project Structure
+
+- `src/App.vue` - Main application component
+- `src/main.js` - Application entry point
+- `public/` - Static assets
+
+## Dependencies
+
+- Vue 3
+- vuedraggable - For drag and drop functionality
+- vue3-toastify - For toast notifications
+
+## Development
+
+The development server will start at `http://localhost:5173` by default.
+
+## Production Build
+
+To create a production build, run:
+
+```bash
+yarn build
+```
+
+The built files will be in the `dist` directory.
+
+## License
+
+MIT
